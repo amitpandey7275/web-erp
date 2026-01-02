@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+/* ===== HEADER ===== */
+.admin-header {
+  background: #1A237E;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-header img {
+  width: 40px;
+  height: 40px;
+}
+
+/* ===== BANNER ===== */
+.banner img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ===== GRID ===== */
+.dashboard-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  height: 110px;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ===== COLORS ===== */
+.blue { background: linear-gradient(135deg, #42A5F5, #1E88E5); }
+.orange { background: linear-gradient(135deg, #FF7043, #F4511E); }
+.purple { background: linear-gradient(135deg, #AB47BC, #8E24AA); }
+.yellow { background: linear-gradient(135deg, #FFCA28, #F9A825); }
+.green { background: linear-gradient(135deg, #66BB6A, #43A047); }
+.pink { background: linear-gradient(135deg, #EC407A, #D81B60); }
+.violet { background: linear-gradient(135deg, #7E57C2, #5E35B1); }
+.gold { background: linear-gradient(135deg, #FFB300, #FF8F00); }
+.brown { background: linear-gradient(135deg, #8D6E63, #5D4037); }
+
+
+@media (max-width: 768px) {
+
+  /* Header text chhota */
+  .admin-header h2 {
+    font-size: 14px;
+  }
+
+  /* Banner height kam */
+  .banner img {
+    height: 160px;
+  }
+
+  /* Grid = 3 cards per row (app jaisa) */
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 15px;
+  }
+
+  /* Card size mobile ke hisaab se */
+  .card {
+    height: 95px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+  /* School name wrap ho jaye */
+  .admin-header h2 {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  /* Grid still 3 columns (exact app feel) */
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    height: 85px;
+    font-size: 11px;
+  }
+}

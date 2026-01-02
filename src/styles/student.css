@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.student-web {
+  background: #f2f4f8;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.top-header {
+  display: flex;
+  align-items: center;
+  background: #1e3a8a;
+  color: white;
+  padding: 14px 20px;
+}
+
+.top-header img {
+  width: 42px;
+  margin-right: 12px;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.main-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ===== PROFILE PANEL ===== */
+.profile-panel {
+  background: white;
+  border-radius: 6px;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* LEFT TEXT */
+.profile-left p {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* RIGHT IMAGE (🔥 EXACT LIKE ERP) */
+.profile-right img {
+  width: 70px;
+  height: 90px;
+  object-fit: cover;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.student-card {
+  height: 105px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.student-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== COLORS ===== */
+.blue   { background: linear-gradient(135deg,#4facfe,#00f2fe); }
+.orange { background: linear-gradient(135deg,#f7971e,#ffd200); }
+.purple { background: linear-gradient(135deg,#c471f5,#fa71cd); }
+.red    { background: linear-gradient(135deg,#f85032,#e73827); }
+.green  { background: linear-gradient(135deg,#43e97b,#38f9d7); }
+.pink   { background: linear-gradient(135deg,#f857a6,#ff5858); }
+.teal   { background: linear-gradient(135deg,#30cfd0,#330867); }
+.yellow { background: linear-gradient(135deg,#fddb92,#d1fdff); color:#333; }
+.sky    { background: linear-gradient(135deg,#36d1dc,#5b86e5); }
+.cyan   { background: linear-gradient(135deg,#00c6ff,#0072ff); }
+.violet { background: linear-gradient(135deg,#8e2de2,#4a00e0); }
+.indigo { background: linear-gradient(135deg,#667eea,#764ba2); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-panel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

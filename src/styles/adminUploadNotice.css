@@ -1,0 +1,96 @@
+/* ===== CONTAINER ===== */
+.notice-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 16px;
+}
+
+/* ===== FORM ===== */
+.notice-form-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.notice-form-card h3 {
+  margin-bottom: 12px;
+  color: #1a237e;
+}
+
+.notice-form-card input,
+.notice-form-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.notice-form-card button {
+  width: 100%;
+  padding: 12px;
+  background: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* ===== LIST ===== */
+.notice-list-card {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.notice-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.notice-row:last-child {
+  border-bottom: none;
+}
+
+.notice-row b {
+  color: #1a237e;
+}
+
+.notice-row p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.notice-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.notice-actions button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.notice-actions .danger {
+  background: #ffebee;
+  color: #c62828;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 600px) {
+  .notice-row {
+    flex-direction: column;
+  }
+
+  .notice-actions {
+    justify-content: flex-end;
+  }
+}
